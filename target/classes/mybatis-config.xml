@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--配置mybaits全局属性-->
+    <settings>
+        <!--使用jdbc的getGeneratedKeys获取数据库自增主键值，
+        插入一条记录时，不插入id，id通过自增赋值，想获取id时要调用getGeneratedKeys-->
+        <setting name="useGeneratedKeys" value="true"/>
+        <!--使用列别名替换列名，select name as title from table,
+        name表中列名，title实体属性名，mybaits自动识别列名转换成了属性名并赋值给属性-->
+        <setting name="useColumnLabel" value="true"/>
+        <!--开启驼峰命名转换:Table(create_time)->Entity(createTime)-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+</configuration>
