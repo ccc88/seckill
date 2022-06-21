@@ -46,7 +46,7 @@
         <dependency><!--数据库驱动，只有在工作时才用到-->
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.16</version>
+            <version>8.0.28</version>
             <scope>runtime</scope><!--生命周期：在工作时-->
         </dependency>
         <!--<dependency>&lt;!&ndash;数据库连接池，优化数据库操作&ndash;&gt;
